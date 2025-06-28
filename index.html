@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5. Isso ajuda o navegador a entender que está lidando com um documento HTML moderno. -->
+
+<html lang="pt-BR">
+  <!-- A tag <html> é o elemento raiz de todo o documento HTML.
+     O atributo lang="en" define o idioma da página como inglês. Pode-se usar "pt-BR" se for português do Brasil. -->
+
+  <head>
+    <!-- A tag <head> contém metadados e configurações da página (não visíveis para o usuário). -->
+
+    <meta charset="UTF-8" />
+    <!-- Define o conjunto de caracteres como UTF-8, que suporta acentos e caracteres especiais. Essencial para textos em português. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configura a visualização em dispositivos móveis, tornando o site responsivo. 
+         "width=device-width" faz o layout ocupar a largura total do dispositivo.
+         "initial-scale=1.0" define o nível inicial de zoom. -->
+
+    <title>JavaBeans</title>
+    <!-- Define o título da página. É o texto que aparece na aba do navegador. -->
+
+    <link rel="stylesheet" href="/index.css" />
+    <!-- Importa o arquivo CSS externo chamado "index.css", que contém os estilos da página. -->
+
+    <!-- Importação de Icones -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <!-- Adiciona um pacote de ícones chamado PhosphoIcon via um link CDN (Content Delivery Network). 
+         Isso permite usar ícones SVG modernos no HTML usando JavaScript. -->
+  </head>
+
+  <body>
+    <!-- O <body> contém todo o conteúdo visível da página web. -->
+
+    <header>
+      <!-- Uma div com a classe "header", provavelmente usada para agrupar e estilizar o cabeçalho da página. -->
+
+      <img src="/images/logo-marrom.png" alt="Logo do JavaBeans" />
+      <!-- Imagem com o logo do site. O atributo "alt" é essencial para acessibilidade e também aparece se a imagem não carregar. -->
+
+      <div class="principal-header">
+        <h1>JavaBeans</h1>
+        <!-- Título principal da página. A tag <h1> indica o cabeçalho de nível 1, que deve ser único por página. -->
+
+        <nav>
+          <!-- A tag <nav> é usada para agrupamento de links de navegação. Ajuda na semântica e acessibilidade. -->
+
+          <ul>
+            <!-- Lista não ordenada (unordered list). -->
+
+            <li>sobre nós</li>
+            <li>nosso café</li>
+            <li>nosso ambiente</li>
+            <!-- Cada <li> é um item da lista. Aqui estão sendo usados para representar os links do menu de navegação.
+                 Em um site real, cada item poderia ser envolvido em uma tag <a> para virar um link clicável. -->
+          </ul>
+        </nav>
+      </div>
+      <div class="social-media">
+        <i class="ph ph-linkedin-logo"></i>
+        <i class="ph ph-instagram-logo"></i>
+        <i class="ph ph-whatsapp-logo"></i>
+      </div>
+    </header>
+  </body>
+</html>

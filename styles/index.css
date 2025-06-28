@@ -1,0 +1,74 @@
+/* Reset básico para evitar espaçamentos padrão dos navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+/* Estiliza o cabeçalho como um container horizontal */
+header {
+  height: 100px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* Centraliza título e navegação no meio do header */
+.principal-header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Estilização do título */
+h1 {
+  color: #a08963;
+  font-family: "Lexend", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+}
+
+/* Estilização da lista do menu */
+nav ul {
+  display: flex;
+  gap: 68px;
+  list-style-type: none;
+  
+}
+
+/* Itens da lista do menu */
+nav ul li {
+  color: #a08963;
+  font-family: "Lexend", sans-serif;
+  font-size: 12px;
+  min-width: 100px;
+  text-align: center;
+
+}
+
+/* Área dos ícones de redes sociais */
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #a08963;
+  font-size: 24px;
+}
+
